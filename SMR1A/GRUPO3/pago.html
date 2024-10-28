@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionX - Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1><a href="index.html">FashionX</a></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+            <li><a href="registro.html">Registrarse</a></li>
+        </ul>
+    </nav>
+
+    <section id="pago">
+        <h2>Finalizar Compra</h2>
+        <table class="resumen-pago">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vestido de Verano</td>
+                    <td>1</td>
+                    <td>$49.99</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td></td>
+                    <td>$49.99</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="#" method="POST">
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required>
+
+            <label for="vencimiento">Fecha de Vencimiento:</label>
+            <input type="text" id="vencimiento" name="vencimiento" required>
+
+            <label for="cvv">Código CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit" class="btn">Finalizar Pago</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FashionX. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

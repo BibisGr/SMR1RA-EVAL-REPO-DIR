@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(241, 216, 182);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+body div{
+    background-color: rgb(252, 252, 252);
+    color: black;
+    border-radius: 10px;
+}
+body div h1{
+    text-align: center;
+}
+.logo{
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: white;
+    max-width: fit-content;
+}

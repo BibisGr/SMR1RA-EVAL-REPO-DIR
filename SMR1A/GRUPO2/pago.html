@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Tienda de Videojuegos y Merchandising</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="producto.html">Producto</a></li>
+                <li><a href="pago.html">Pago</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pago">
+            <h2>Formulario de pago</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                <label for="tarjeta">Tarjeta de crédito:</label>
+                <input type="text" id="tarjeta" name="tarjeta" required>
+                <input type="submit" value="Confirmar pago">
+            </form>
+            <section class="resumen">
+                <h2>Resumen del pedido</h2>
+                <ul>
+                    <li>Producto 1: $19.99</li>
+                    <li>Producto 2: $29.99</li>
+                    <li>Total: $49.98</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tienda de Videojuegos y Merchandising</p>
+    </footer>
+</body>
+</html>

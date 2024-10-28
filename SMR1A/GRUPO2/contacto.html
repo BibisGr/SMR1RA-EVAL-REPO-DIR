@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda de Videojuegos y Merchandising</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="producto.html">Producto</a></li>
+                <li><a href="pago.html">Pago</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li> <!-- Añadido clase 'active' -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <input type="submit" value="Enviar mensaje">
+            </form>
+            <section class="mapa">
+                <img src="img/mapa.jpg" alt="Mapa de la tienda">
+            </section>
+            <section class="redes-sociales">
+                <h2>Redes sociales</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/tienda">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/tienda">Twitter</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Tienda de Videojuegos y Merchandising</p>
+    </footer>
+</body>
+</html>

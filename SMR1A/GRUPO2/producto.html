@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Tienda de Videojuegos y Merchandising</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="producto.html">Producto</a></li>
+                <li><a href="pago.html">Pago</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="producto-detalle">
+            <h2 id="nombre-producto">Nombre del Producto</h2>
+            <div class="producto-info">
+                <div class="producto-img">
+                    <img id="imagen-producto" src="" alt="Imagen del Producto">
+                </div>
+                <div class="producto-descripcion">
+                    <h3>Descripción del Producto</h3>
+                    <p id="descripcion-producto"></p>
+                    <p><strong id="precio-producto"></strong></p>
+
+                    <!-- Opciones de cantidad -->
+                    <label for="cantidad">Cantidad:</label>
+                    <select id="cantidad">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <!-- Botón añadir al carrito -->
+                    <button>Añadir al carrito</button>
+
+                    <!-- Enlace de regreso al catálogo -->
+                    <p><a href="catalogo.html" class="volver-catalogo">Volver al catálogo</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tienda de Videojuegos y Merchandising</p>
+    </footer>
+</body>
+</html>

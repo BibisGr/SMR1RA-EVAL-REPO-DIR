@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="icon" type="image/png" href="/img/LogoTemano.png">
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="register-button-container">
+        <a href="/pag/login.html">
+            <button class="register-button">Registrarse</button>
+        </a>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/pag/mainpage.html">Inicio</a></li>
+            <li><a href="/pag/mainshop.html">Tienda</a></li>
+            <li><a href="/pag/promotions.html">Promociones</a></li>
+            <li><a href="/pag/contact.html">Contacto</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search-input" oninput="showSuggestions(this.value)" />
+            <div id="suggestions" style="display: none;"></div>
+            <img src="/img/magnifier_magnifying_glass_icon_149435.png" alt="Lupa">
+        </div>
+    </nav>
+    <script src="/javascript/searchsugestion.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="icon" type="image/png" href="/img/LogoTemano.png">
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/pag/mainpage.html">Inicio</a></li>
+            <li><a href="/pag/mainshop.html">Tienda</a></li>
+            <li><a href="/pag/promotions.html">Promociones</a></li>
+            <li><a href="/pag/contact.html">Contacto</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search-input" oninput="showSuggestions(this.value)" />
+            <div id="suggestions" style="display: none;"></div>
+            <img src="/img/magnifier_magnifying_glass_icon_149435.png" alt="Lupa">
+        </div>
+    </nav>
+    <div class="login-container">
+        <h2>Registro</h2>
+        <form action="/submit_form" method="POST"> <!-- Cambia la acción según sea necesario -->
+            <label for="first-name">Nombre:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Apellidos:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="birthdate">Fecha de nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">¿Desea recibir novedades sobre nosotros?</label>
+            </div>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    <div class="login-container">
+        <h2>Detalles de la Cuenta</h2>
+        
+        <form id="account-details-form">
+            <label for="account-email">Correo electrónico:</label>
+            <input type="email" id="account-email" name="account-email" required>
+
+            <label for="account-password">Contraseña:</label>
+            <input type="password" id="account-password" name="account-password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+    
+    <script src="/javascript/searchsugestion.js"></script>
+</body>
